@@ -141,7 +141,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    text-transform: capitalize;
     border: none;
     outline: none;
 }
@@ -154,6 +153,10 @@
 *::selection{
     color: var(--white);
     background-color: var(--main-color);
+}
+.are {
+    display: flex;
+    flex-direction: row;
 }
 
 body{
@@ -256,7 +259,7 @@ section{
 }
 
 .logo img{
-    height: 5.5rem;
+    height: 8rem;
     object-fit: cover;
 }
 
@@ -449,7 +452,7 @@ section{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 7rem;
+    height: 10rem;
     padding: 0rem 5%;
     background: var(--white);
 }
@@ -579,7 +582,7 @@ section{
 
 /*----- 6- Footer Area CSS -----*/
 .footer{
-    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.8)), url(../../assets/images/Home/Home-1.jpg);
+    background-color: #323232;
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center;
@@ -1323,8 +1326,8 @@ input:-webkit-autofill:active {
     -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/Background/Counter.jpg");
-    background:         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/Background/Counter.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/images/Home/Blown-gasket-3.webp");
+    background:         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/images/Home/Blown-gasket-3.webp");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -4579,8 +4582,8 @@ input[type="range"]::-moz-range-thumb {
 .blog-container.grid .blog-items{
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(33rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap: 1rem;
 }
 
@@ -4918,3 +4921,20 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /*------------------------------ (06)-Contact (End) ------------------------------*/
+
+@media screen and (max-width: 767px) {
+    .blog.grid {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      order: -1; /* Esto mueve la barra lateral hacia arriba en dispositivos móviles */
+      width: 100%; /* Ajusta el ancho para ocupar toda la pantalla en dispositivos móviles */
+    }
+    
+    .blog-container {
+      order: 1; /* Esto mueve el contenido principal hacia abajo en dispositivos móviles */
+      width: 100%; /* Ajusta el ancho para ocupar toda la pantalla en dispositivos móviles */
+    }
+  }
