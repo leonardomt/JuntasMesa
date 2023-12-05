@@ -63,23 +63,13 @@
 
         <div class="container">
 
-          <!-- Navbar --> <!--
+          <!-- Navbar -->
           <nav class="navbar">
-            <a class="nav-btn" href="./index.html">inicio</a>
+            <a class="nav-btn" href="#home">Inicio</a>
+            <a class="nav-btn" href="#about">Quiénes somos</a>
+            <a class="nav-btn" href="#products">Productos</a>
 
-            
-            <div class="dropdown-menu">
-              <button class="nav-btn">blog <i class="fas fa-angle-down"></i> </button>
-              <div class="dropdown-content">
-                <a href="./pages/Blog/Blog-Grid.html">blogs grid</a>
-                <a href="./pages/Blog/Blog-List.html">blogs list</a>
-                <a href="./pages/Blog/Blog-Single.html">blog single</a>
-              </div>
-            </div>
-            
-            <a class="nav-btn" href="./pages/Contact/Contact.html">contact</a>
-
-          </nav> -->
+          </nav>
 
           <!--<a href="./pages/Pages/Appointment.html" class="btn">Appointment</a>
             -->
@@ -95,26 +85,20 @@
     <div class="mobile-menu">
 
       <div id="close-side-bar" class="fa-solid fa-angles-left"></div>
-<!--
+
       <nav class="mobile-navbar">
 
         <div class="nav-link">
-          <div class="main-nav-link"> <a class="nav-btn" href="./index.html">home</a> </div>
+          <div class="main-nav-link"> <a class="nav-btn" href="#home">Inicio</a> </div>
         </div>
-        
         <div class="nav-link">
-          <div class="main-nav-link"> <div class="nav-btn">blog</div> <i class="fas fa-plus"></i> </div>
-          <div class="sub-nav-link">
-            <a href="./pages/Blog/Blog-Grid.html">blogs grid</a>
-            <a href="./pages/Blog/Blog-List.html">blogs list</a>
-            <a href="./pages/Blog/Blog-Single.html">blog single</a>
-          </div>
-        </div> 
-        
-        <div class="nav-link">
-          <div class="main-nav-link"> <a class="nav-btn" href="./pages/Contact/contact.html">contact</a> </div>
+          <div class="main-nav-link"> <a class="nav-btn" href="#about">Quiénes somos</a> </div>
         </div>
--->
+        <div class="nav-link">
+          <div class="main-nav-link"> <a class="nav-btn" href="#products">Productos</a> </div>
+        </div>
+
+
       </nav>
 
     </div>
@@ -126,7 +110,7 @@
 
 
   <!-- ==================== Home-Slider Area (Start) ==================== -->
-  <section class="home">
+  <section class="home" id="home">
 
     <div class="swiper-container home-slider">
       <div class="swiper-wrapper">
@@ -136,37 +120,47 @@
           <img src="./assets/images/Home/11.jpg" alt="feature-image1"> <!-- Slide Image -->
           <div class="content">
             <div class="text">
-              <h4></h4>
-              <h3>Juntas Para Todo Tipo de Motor</h3>
-              <p>Con materiales originales importados le garantizamos la calidad del producto. Las juntas
+              <h3 style="margin-top: 10rem;">Juntas Para Todo Tipo de Motor</h3>
+              <p style="width: 70%;">Con materiales originales importados le garantizamos la calidad del producto. Las
+                juntas
                 comerciales admiten devolución con reintegro del 100% si no han sido usadas.
               </p>
               <div class="are">
-                <h4><i class="fas fa-clock"></i>&nbsp; De Lunes a Viernes <br> &nbsp; &nbsp; &nbsp; &nbsp; 
-                  9.00am - 5.00pm <br> &nbsp; &nbsp; &nbsp; &nbsp; Sábados <br> &nbsp; &nbsp; &nbsp; &nbsp; 
-                  9.00am - 3.00pm
-                </h4> 
-                <h4 style="padding-left: 5rem;"><i class="fas fa-phone"></i> +53 5 558 04 41  <br> &nbsp; &nbsp; &nbsp; &nbsp; 
-                  +53 5 921 06 96 <br> &nbsp; &nbsp; &nbsp; &nbsp; +53 5 436 42 09 <br> &nbsp; &nbsp; &nbsp; &nbsp; 
-                  +53 7 649 20 56
-                </h4>
+                <div>
+                  <h4><i class="fas fa-clock"></i>Horario</h4>
+                  <p style="color: #ff6b18;"><span>Lunes-Viernes:</span><br>
+                    <span>9:00 AM - 5:00 PM </span><br>
+                    <span>Sábado:</span><br>
+                    <span>9:00 AM - 3:00 PM </span><br>
+                    <span>Domingo: Cerrado</span>
+                  </p>
+                </div>
+                <div style="margin-left: 3rem;">
+                  <h4><i class="fas fa-phone"></i>Contáctenos</h4>
+                  <p style="color: #ff6b18;">
+                    <span>+53 5 558 04 41</span><br>
+                    <span>+53 5 921 06 96 </span><br>
+                    <span>+53 5 436 42 09</span><br>
+                    <span>+53 7 649 20 56</span>
+                  </p>
+                </div>
               </div>
-             
             </div>
           </div>
         </div>
-
       </div>
 
-      <!-- Pagination for Swiper -->
-      <div class="swiper-pagination swiper-pagination1"></div>
+    </div>
+
+    <!-- Pagination for Swiper -->
+    <div class="swiper-pagination swiper-pagination1"></div>
     </div>
 
   </section>
   <!-- ==================== Home-Slider Area (End) ==================== -->
 
   <!-- ==================== About Area (Start) ==================== -->
-  <section class="about">
+  <section class="about" id="about">
 
     <div class="box-container">
 
@@ -264,7 +258,7 @@
 
 
   <!-- ==================== Blog Grid (Start) ==================== -->
-  <section class="blog grid"> 
+  <section class="blog grid" id="products">
 
     <!-- ========== Blog Sidebar Area (Start) ========== -->
     <div class="sidebar">
@@ -273,13 +267,13 @@
       <div class="search sidebar-item">
 
         <div class="sidebar-heading">
-          <h2>search</h2>
+          <h2>buscar</h2>
         </div>
 
         <!-- Blog Search Form -->
         <form class="box-container" onsubmit="event.preventDefault();">
           <div class="input-box">
-            <input type="search" id="blog-search" placeholder="search..." required>
+            <input type="search" id="blog-search" placeholder="buscar..." required>
             <button type="submit"><i class="fas fa-search"></i></button>
           </div>
         </form>
@@ -291,23 +285,43 @@
       <div class="category sidebar-item">
 
         <div class="sidebar-heading">
-          <h2>categories</h2>
+          <h2>Categorías</h2>
         </div>
 
         <!-- Blog Categories -->
         <div class="box-container">
-          <a  class="item"><span><i class="fas fa-caret-right"></i>Carro americano</span><p>(30)</p></a>
-          <a  class="item"><span><i class="fas fa-caret-right"></i>Hyundai</span><p>(10)</p></a>
-          <a  class="item"><span><i class="fas fa-caret-right"></i>Motor</span><p>(09)</p></a>
-          <a  class="item"><span><i class="fas fa-caret-right"></i>Escape</span><p>(06)</p></a>
-          
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Americano</span>
+            <p>(12)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Alemán</span>
+            <p>(2)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Chino</span>
+            <p>(7)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Coreano</span>
+            <p>(11)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Francés</span>
+            <p>(4)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Italiano</span>
+            <p>(9)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Japonés</span>
+            <p>(12)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Auto Soviético</span>
+            <p>(8)</p>
+          </a>
+          <a class="item"><span><i class="fas fa-caret-right"></i>Original</span>
+            <p>(1)</p>
+          </a>
+
         </div>
 
       </div>
       <!-- ===== Category Area (End) ===== -->
-
-
-     
 
     </div>
     <!-- ========== Blog Sidebar Area (End) ========== -->
@@ -316,303 +330,748 @@
     <div class="blog-container grid">
 
       <!-- ===== Blogs (Start) ===== -->
-      <div class="blog-items"> 
+      <div class="blog-items">
 
         <!-- Blog-1 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-1.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Motor</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Biuck-8 en linea.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-            <div class="details">
-              
-            </div>
-            <p class="main-heading" >Insider's Garage: Car Repair Tips & Tricks</a> <!-- Blog Title -->
-            
+            <p class="main-heading">Biuck 8 en linea</p> <!-- Blog Title -->
           </div>
         </div>
-        
+
         <!-- Blog-2 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-2.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Hyundai</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Chevrolet48-52.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-            <p class="main-heading" >Your Trusted Mechanic: Tips and Advice</a> <!-- Blog Title -->
-            
+            <p class="main-heading">Chevrolet 48-52</p> <!-- Blog Title -->
           </div>
         </div>
-        
+
         <!-- Blog-3 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-3.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Chevrolet54-59.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >ProMend Repair Shop News</a> <!-- Blog Title -->
-            
+            <p class="main-heading">Chevrolet 54-59</p> <!-- Blog Title -->
           </div>
         </div>
 
         <!-- Blog-4 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-4.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Hyundai</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Chevy-6 en linea.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading">Auto Answers: Your Car Questions Answered</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Chevy 6 en línea</p> <!-- Blog Title -->
+          </div>
         </div>
-        
+
         <!-- Blog-5 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-5.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Escape</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Ford-Endura.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading">Fix-It Right: Our Approach to Repairs</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Ford Endura</p> <!-- Blog Title -->
+          </div>
         </div>
-        
+
         <!-- Blog-6 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Ford-Fairlane.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-           </div>
+            <p class="main-heading">Ford Fairlane</p> <!-- Blog Title -->
+          </div>
         </div>
 
-         <!-- Blog-7 -->
-         <div class="blog-item">
+        <!-- Blog-7 -->
+        <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Ford-Falcon.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Ford Falcon</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-8 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Ford-Gallego.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Ford Gallego</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-9 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Perkins-Balkancar.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Perkins Balkancar</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-10 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Perkins-de 6.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Perkins D6</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-11 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Perkins-F108.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Perkins F108</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-12 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AA-Perkins-Richard de 6.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Americano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Perkins Richard D6</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-13 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AAL-Mercedes-Busscar.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Alemán</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Mercedes-Benz Busscar</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-14 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AAL-Opel.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Alemán</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Opel</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-15 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-Cummins-6BT.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Cummins-6BT</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-16 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-Diana.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Diana</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-17 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-Geely-CK.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Geely CK</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-18 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-QQ.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Chery QQ</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-19 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-Yuchai de 4.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Yunchai D4</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-20 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-Yuchai.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Yunchai</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-21 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/AC-Yunchai-YC4F.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Chino</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Yunchai YC4F</p> <!-- Blog Title -->
+          </div>
         </div>
 
         <!-- Blog-22 -->
         <div class="blog-item">
           <div class="image">
-            <img src="assets/images/Blog/Blogs/Blog-6.jpg" alt="Blog-Image"> <!-- Blog Image -->
-            <div class="category">Carro americano</div> <!-- Blog Category -->
+            <img src="assets/images/Juntas/ACS-DaewooTico.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
           </div>
           <div class="content">
-           
-            <p class="main-heading" >Car Care Corner: DIY Tips for Drivers</a> <!-- Blog Title -->
-            </div>
+            <p class="main-heading">Daewoo Tico</p> <!-- Blog Title -->
+          </div>
         </div>
-          
-      </div>
-      <!-- ===== Blogs (End) ===== -->
 
-  <!-- ===== Pagination (Start) ===== -->
-  <div class="pages-no">
-    <div class="container">
-      <!-- Previous page button -->
-      <div class="item" id="prevPage">
-        <i class="fas fa-arrow-left"></i> 
-      </div>
-      
-      <!-- Page numbers -->
-      <div class="numbers">
-        <!-- Page number items will be dynamically generated here -->
-      </div>
+        <!-- Blog-23 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Hyundai-Accent-1.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai Accent 1</p> <!-- Blog Title -->
+          </div>
+        </div>
 
-      <!-- Next page button-->
-      <div class="item" id="nextPage">
-        <i class="fas fa-arrow-right"></i> 
+        <!-- Blog-24 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Hyundai-Accent-2.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai Accent 2</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-25 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Hyundai-Accent-3.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai Accent 3</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-26 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Hyundai-H100.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai H100</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-27 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Hyundai-H1deGasolina.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai H1 (Gosolina)</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-28 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Hyundai-Sonata.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai Sonata</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-29 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-HyundaiI10-Atos.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hyundai I10 Atos</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-30 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Kia-Picanto.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Kia Picanto</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-31 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Kia-Rio.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Kia Rio</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-32 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/ACS-Kia-Sportage.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Coreano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Kia Sportage</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-33 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AF-Peugeot-405.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Francés</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Peugeot 405</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-34 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AF-Peugeot-TU3-TU1.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Francés</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Peugeot TU3-TU1</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-35 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AF-Renault-19.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Francés</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Renault 19</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-36 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AF-Renault-Fluence.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Francés</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Renault Fluence</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-37 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat-Fiorino-Original.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Fiorino</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-38 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat-Fiorino.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Fiorino</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-39 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat-Iveco de 3.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Iveco D3</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-40 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat-Iveco de 6.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Iveco D6</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-41 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/Ai-Fiat-Iveco.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Iveco</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-42 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat-Panda.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Panda</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-43 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat-Tempra.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat Tempra</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-44 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat125.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat 125</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-45 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AI-Fiat126(Polaco).jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Italiano</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Fiat 126 (Polaco)</p> <!-- Blog Title -->
+          </div>
+        </div>
+
+        <!-- Blog-46 -->
+        <div class="blog-item">
+          <div class="image">
+            <img src="assets/images/Juntas/AJ-Hino.jpg" alt="Blog-Image"> <!-- Blog Image -->
+            <div class="category">Auto Japonés</div> <!-- Blog Category -->
+          </div>
+          <div class="content">
+            <p class="main-heading">Hino</p> <!-- Blog Title -->
+          </div>
+        </div>
+          <!-- Blog-47 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Isuzu-CD40.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Isuzu CD40</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-48 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Komatsu-4D95.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Komatsu 4D95</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-49 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Mitsubishi.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Mitsubishi</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-50 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Nissan-LD22.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Nissan LD22</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-51 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Nissan-LD23.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Nissan LD23</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-52 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-SubaruVivio.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Subaru Vivio</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-53 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Toyota-2C.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Toyota 2C</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-54 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Toyota-2L-3L-5L.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Toyota 2L - 3L - 5L</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-55 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Toyota-2LAntiguo.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Toyota 2L Antiguo</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-56 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Toyota-3B.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Toyota 3B</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-57 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AJ-Toyta-Nose.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Japonés</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Toyota</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-58 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-ARO.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">ARO</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-59 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Lada.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Lada</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-60 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Moscovich.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Moskvich</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-61 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Sector Iris D4.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Sector Iris D4</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-62 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Sector Iris D6.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Sector Iris D6</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-63 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Skoda-Octavia.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">Skoda Octavia</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-64 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Volga21.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">GAZ M21 Volga</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+          <!-- Blog-65 -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="assets/images/Juntas/AS-Volga24.jpg" alt="Blog-Image"> <!-- Blog Image -->
+              <div class="category">Auto Soviético</div> <!-- Blog Category -->
+            </div>
+            <div class="content">
+              <p class="main-heading">GAZ Volga 24</p> <!-- Blog Title -->
+            </div>
+          </div>
+
+        </div>
+        <!-- ===== Blogs (End) ===== -->
+
+        <!-- ===== Pagination (Start) ===== -->
+        <div class="pages-no">
+          <div class="container">
+            <!-- Previous page button -->
+            <div class="item" id="prevPage">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <!-- Page numbers -->
+            <div class="numbers">
+              <!-- Page number items will be dynamically generated here -->
+            </div>
+
+            <!-- Next page button-->
+            <div class="item" id="nextPage">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ===== Pagination (End) ===== -->
+
+
       </div>
-    </div>
-  </div>
-  <!-- ===== Pagination (End) ===== -->
-
-
-    </div>
-    <!-- ========== Blog Container (End) ========== -->
+      <!-- ========== Blog Container (End) ========== -->
 
   </section>
   <!-- ==================== Blog Grid (End) ==================== -->
@@ -645,7 +1104,7 @@
 
       <!-- Footer item 2 - Quick links to pages -->
       <div class="footer-item">
-        
+
       </div>
 
       <!-- Footer item 4 - Opening hours and social links -->
@@ -654,10 +1113,10 @@
         <div class="info timing">
           <i class="fas fa-phone"></i>
           <div class="time-item">
-              <p><span>+53 5 558 04 41</span></p>
-              <p><span>+53 5 921 06 96 </span></p>
-              <p><span>+53 5 436 42 09</span></p>
-              <p><span>+53 7 649 20 56</span></p>
+            <p><span>+53 5 558 04 41</span></p>
+            <p><span>+53 5 921 06 96 </span></p>
+            <p><span>+53 5 436 42 09</span></p>
+            <p><span>+53 7 649 20 56</span></p>
           </div>
         </div>
         <h2>Redes Sociales</h2>
@@ -701,17 +1160,18 @@
   <script src="assets/js/partner-slider.js"></script> <!-- Script for Partner Slider -->
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const searchInput = document.getElementById('blog-search');
       const blogItems = document.querySelectorAll('.blog-item');
-  
-      searchInput.addEventListener('input', function(event) {
+      const pagination = document.querySelector('.pages-no');
+
+      searchInput.addEventListener('input', function (event) {
         const searchText = event.target.value.trim().toLowerCase();
-  
-        blogItems.forEach(function(item) {
+
+        blogItems.forEach(function (item) {
           const title = item.querySelector('.main-heading').textContent.toLowerCase();
           const category = item.querySelector('.category').textContent.toLowerCase();
-  
+
           if (title.includes(searchText) || category.includes(searchText)) {
             item.style.display = 'block';
           } else {
@@ -719,28 +1179,30 @@
           }
         });
       });
-  
+
       // Obtener todas las categorías
       const categoryItems = document.querySelectorAll('.category .item');
-  
+
       // Iterar sobre cada categoría para agregar un evento clic
       categoryItems.forEach(item => {
-        item.addEventListener('click', function(event) {
-          event.preventDefault(); 
+        item.addEventListener('click', function (event) {
+          event.preventDefault();
           const categoryName = this.querySelector('span').textContent.trim();
           const searchInput = document.getElementById('blog-search');
-          
+
           // Asignar el nombre de la categoría al campo de búsqueda
           searchInput.value = categoryName;
-  
+
           // Simular el envío del formulario después de asignar el valor
           const searchForm = searchInput.closest('form');
           if (searchForm) {
             searchForm.dispatchEvent(new Event('submit', { cancelable: true }));
           }
-  
+          // Ocultar la paginación al seleccionar una categoría
+          pagination.style.display = 'none';
+
           // Filtrar los elementos por la categoría seleccionada
-          blogItems.forEach(function(item) {
+          blogItems.forEach(function (item) {
             const itemCategory = item.querySelector('.category').textContent.toLowerCase();
             if (itemCategory.includes(categoryName.toLowerCase())) {
               item.style.display = 'block';
@@ -750,85 +1212,108 @@
           });
         });
       });
-    });
 
-    document.addEventListener('DOMContentLoaded', function() {
-  const blogItems = document.querySelectorAll('.blog-items .blog-item');
-  const prevPageBtn = document.getElementById('prevPage');
-  const nextPageBtn = document.getElementById('nextPage');
-  const pageNumbers = document.querySelector('.numbers');
+      searchInput.addEventListener('input', function (event) {
+        const searchText = event.target.value.trim().toLowerCase();
 
-  const itemsPerPage = 9;
-  let currentPage = 1;
+        blogItems.forEach(function (item) {
+          const title = item.querySelector('.main-heading').textContent.toLowerCase();
+          const category = item.querySelector('.category').textContent.toLowerCase();
 
-  function displayItems(page) {
-    const startIndex = (page - 1) * itemsPerPage;
-    const endIndex = page * itemsPerPage;
+          if (title.includes(searchText) || category.includes(searchText)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
 
-    blogItems.forEach(function(item, index) {
-      if (index >= startIndex && index < endIndex) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
-
-  function generatePageNumbers(totalItems) {
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-    pageNumbers.innerHTML = '';
-
-    for (let i = 1; i <= totalPages; i++) {
-      const pageNumber = document.createElement('div');
-      pageNumber.classList.add('item');
-      pageNumber.textContent = i;
-
-      if (i === currentPage) {
-        pageNumber.classList.add('active');
-      }
-
-      pageNumber.addEventListener('click', function() {
-        currentPage = i;
-        displayItems(currentPage);
-        highlightActivePage();
+        // Ocultar o mostrar la paginación según si hay texto de búsqueda o no
+        if (searchText.length > 0) {
+          pagination.style.display = 'none';
+        } else {
+          pagination.style.display = 'block';
+        }
       });
 
-      pageNumbers.appendChild(pageNumber);
-    }
-  }
-
-  function highlightActivePage() {
-    const allPageNumbers = document.querySelectorAll('.numbers .item');
-    allPageNumbers.forEach(function(page) {
-      page.classList.remove('active');
     });
 
-    const activePage = document.querySelector('.numbers .item:nth-child(' + currentPage + ')');
-    activePage.classList.add('active');
-  }
+    document.addEventListener('DOMContentLoaded', function () {
+      const blogItems = document.querySelectorAll('.blog-items .blog-item');
+      const prevPageBtn = document.getElementById('prevPage');
+      const nextPageBtn = document.getElementById('nextPage');
+      const pageNumbers = document.querySelector('.numbers');
 
-  prevPageBtn.addEventListener('click', function() {
-    if (currentPage > 1) {
-      currentPage--;
+      const itemsPerPage = 9;
+      let currentPage = 1;
+
+      function displayItems(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = page * itemsPerPage;
+
+        blogItems.forEach(function (item, index) {
+          if (index >= startIndex && index < endIndex) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+
+      function generatePageNumbers(totalItems) {
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        pageNumbers.innerHTML = '';
+
+        for (let i = 1; i <= totalPages; i++) {
+          const pageNumber = document.createElement('div');
+          pageNumber.classList.add('item');
+          pageNumber.textContent = i;
+
+          if (i === currentPage) {
+            pageNumber.classList.add('active');
+          }
+
+          pageNumber.addEventListener('click', function () {
+            currentPage = i;
+            displayItems(currentPage);
+            highlightActivePage();
+          });
+
+          pageNumbers.appendChild(pageNumber);
+        }
+      }
+
+      function highlightActivePage() {
+        const allPageNumbers = document.querySelectorAll('.numbers .item');
+        allPageNumbers.forEach(function (page) {
+          page.classList.remove('active');
+        });
+
+        const activePage = document.querySelector('.numbers .item:nth-child(' + currentPage + ')');
+        activePage.classList.add('active');
+      }
+
+      prevPageBtn.addEventListener('click', function () {
+        if (currentPage > 1) {
+          currentPage--;
+          displayItems(currentPage);
+          highlightActivePage();
+        }
+      });
+
+      nextPageBtn.addEventListener('click', function () {
+        const totalItems = blogItems.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+        if (currentPage < totalPages) {
+          currentPage++;
+          displayItems(currentPage);
+          highlightActivePage();
+        }
+      });
+
       displayItems(currentPage);
-      highlightActivePage();
-    }
-  });
-
-  nextPageBtn.addEventListener('click', function() {
-    const totalItems = blogItems.length;
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-    if (currentPage < totalPages) {
-      currentPage++;
-      displayItems(currentPage);
-      highlightActivePage();
-    }
-  });
-
-  displayItems(currentPage);
-  generatePageNumbers(blogItems.length);
-});
+      generatePageNumbers(blogItems.length);
+    });
 
 
 
