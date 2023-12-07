@@ -4298,6 +4298,8 @@ input[type="range"]::-moz-range-thumb {
 
 /*----- 01- Blog-Item -----*/
 .blog-item{
+    min-width: 20rem; /* or your preferred fixed width */
+    max-width: 20rem; /* ensures it doesn't exceed this width */
     background-color: var(--white);
     -webkit-box-shadow: var(--box-shadow);
             box-shadow: var(--box-shadow);
@@ -4367,7 +4369,7 @@ input[type="range"]::-moz-range-thumb {
 
 .blog-item .content .main-heading{
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--secondary-color);
     line-height: 1.3;
@@ -4582,14 +4584,12 @@ input[type="range"]::-moz-range-thumb {
         flex: 1 1 75rem;
 }
 
-.blog-container.grid .blog-items{
-    display: -ms-grid;
+.blog-container.grid .blog-items {
     display: grid;
-    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 1rem;
-}
-
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust the minmax value */
+    gap: 0.5rem; /* Adjust the gap between items */
+  }
+  
 /*----- 2- Blog List -----*/
 .blog.list{
     display: -webkit-box;
